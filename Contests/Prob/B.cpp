@@ -1,17 +1,15 @@
 #include <stdio.h>
 //#include "stdafx.h"
-#include <string>
-#include <stdlib.h>
+long sigma(long a,long b){
+	return a + b;
+}
+
 int main()
 {
-	char Ch;
 	long summ = 0;
-	std::string s;
-	while (Ch!="\n"){
-		while (Ch!=" "){
-			scanf("%s",Ch);
-			s = s + ch;
-		}
-		summ = std::atoi(s)+summ;
-	};
+	long a = 0;
+
+	while	(scanf("%ld",&a) != EOF )
+		summ = a + summ;
+	printf("%ld",summ);
 }
