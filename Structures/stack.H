@@ -2,20 +2,21 @@
 class stack
 {
 private:
-	int foundation	;
+	int* foundation	;
 	int top		;
 	int capacity	;
 
 public:
-	stack(int capacity)
+	stack(int initSize)
 	{
 		top = 0;
-		&foundation == new int(capacity);
+		capacity = initSize;
+		foundation = new int[capacity];
 	}
 
 	~stack()
 	{
-		delete[] &foundation;
+		delete[] foundation;
 	}
 
 	bool push(int elem)
